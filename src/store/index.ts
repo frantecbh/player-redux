@@ -1,0 +1,11 @@
+import { configureStore } from "@reduxjs/toolkit";
+import { useSelector, type TypedUseSelectorHook } from "react-redux";
+
+
+
+export const store = configureStore({
+  reducer: {}
+})
+
+
+export const useAppSelector: TypedUseSelectorHook<ReturnType<typeof store.getState> > = useSelector
